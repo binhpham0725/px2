@@ -1,0 +1,141 @@
++ fdisk -l /dev/block/sda
+Note: sector size is 4096 (not 512)
+Found valid GPT with protective MBR; using GPT
+
+Disk /dev/block/sda: 124674048 sectors, 3680M
+Logical sector size: 4096
+Disk identifier (GUID): 98101b32-bbe2-4bf2-a06e-2bb33d000c20
+Partition table holds up to 48 entries
+First usable sector is 6, last usable sector is 15584250
+
+Number  Start (sector)    End (sector)  Size       Code  Name
+   1               6              15       40960   0700  padding0
+   2              16             143        512K   0700  lockbooter_a
+   3             144             271        512K   0700  rpm_a
+   4             272             783       2048K   0700  tz_a
+   5             784             911        512K   0700  hyp_a
+   6             912            1039        512K   0700  pmic_a
+   7            1040           21519       80.0M   0700  modem_a
+   8           21520           21775       1024K   0700  abl_a
+   9           21776           29967       32.0M   0700  boot_a
+  10           29968           38159       32.0M   0700  hosd_a
+  11           38160           38287        512K   0700  keymaster_a
+  12           38288           38415        512K   0700  cmnlib_a
+  13           38416           38543        512K   0700  cmnlib64_a
+  14           38544           38607        256K   0700  apdp_a
+  15           38608           38671        256K   0700  msadp_a
+  16           38672           38703        128K   0700  devcfg_a
+  17           38704           38735        128K   0700  storsec_a
+  18           38736           38751       65536   0700  vbmeta_a
+  19           38752           39519       3072K   0700  trusty_a
+  20           39520          167519        500M   0700  vendor_a
+  21          167520          169567       8192K   0700  dtbo_a
+  22          169568          824927       2560M   0700  system_a
+  23          824928          825055        512K   0700  lockbooter_b
+  24          825056          825183        512K   0700  rpm_b
+  25          825184          825695       2048K   0700  tz_b
+  26          825696          825823        512K   0700  hyp_b
+  27          825824          825951        512K   0700  pmic_b
+  28          825952          846431       80.0M   0700  modem_b
+  29          846432          846687       1024K   0700  abl_b
+  30          846688          854879       32.0M   0700  boot_b
+  31          854880          863071       32.0M   0700  hosd_b
+  32          863072          863199        512K   0700  keymaster_b
+  33          863200          863327        512K   0700  cmnlib_b
+  34          863328          863455        512K   0700  cmnlib64_b
+  35          863456          863519        256K   0700  apdp_b
+  36          863520          863583        256K   0700  msadp_b
+  37          863584          863615        128K   0700  devcfg_b
+  38          863616          863647        128K   0700  storsec_b
+  39          863648          863663       65536   0700  vbmeta_b
+  40          863664          864431       3072K   0700  trusty_b
+  41          864432          992431        500M   0700  vendor_b
+  42          992432          994479       8192K   0700  dtbo_b
+  43          994480         1649839       2560M   0700  system_b
+  44         1649840         1650687       3392K   0700  padding1
+  45         1650688        15584250       53.1G   0700  userdata
++ fdisk -l /dev/block/sdb
+Note: sector size is 4096 (not 512)
+Found valid GPT with protective MBR; using GPT
+
+Disk /dev/block/sdb: 8192 sectors, 32.0M
+Logical sector size: 4096
+Disk identifier (GUID): 98101b32-bbe2-4bf2-a06e-2bb33d000c20
+Partition table holds up to 4 entries
+First usable sector is 6, last usable sector is 1018
+
+Number  Start (sector)    End (sector)  Size       Code  Name
+   1               6            1018       4052K   0700  xbl_a
++ fdisk -l /dev/block/sdc
+Note: sector size is 4096 (not 512)
+Found valid GPT with protective MBR; using GPT
+
+Disk /dev/block/sdc: 8192 sectors, 32.0M
+Logical sector size: 4096
+Disk identifier (GUID): 98101b32-bbe2-4bf2-a06e-2bb33d000c20
+Partition table holds up to 4 entries
+First usable sector is 6, last usable sector is 1018
+
+Number  Start (sector)    End (sector)  Size       Code  Name
+   1               6            1018       4052K   0700  xbl_b
++ fdisk -l /dev/block/sdd
+Note: sector size is 4096 (not 512)
+Found valid GPT with protective MBR; using GPT
+
+Disk /dev/block/sdd: 196608 sectors,  768M
+Logical sector size: 4096
+Disk identifier (GUID): 98101b32-bbe2-4bf2-a06e-2bb33d000c20
+Partition table holds up to 20 entries
+First usable sector is 6, last usable sector is 24570
+
+Number  Start (sector)    End (sector)  Size       Code  Name
+   1               6             261       1024K   0700  misc
+   2             262             263        8192   0700  ssd
+   3             264            8455       32.0M   0700  persist
+   4            8456            8583        512K   0700  frp
+   5            8584            8584        4096   0700  cdt
+   6            8585            8840       1024K   0700  ddr
+   7            8841            8872        128K   0700  sec
+   8            8873            9128       1024K   0700  dip
+   9            9129            9129        4096   0700  dpo
+  10            9130           17485       32.6M   0700  splash
+  11           17486           17486        4096   0700  limits
+  12           17487           17742       1024K   0700  toolsfv
+  13           17743           19790       8192K   0700  logfs
+  14           19791           20302       2048K   0700  sti
+  15           20303           20814       2048K   0700  modemst1
+  16           20815           21326       2048K   0700  modemst2
+  17           21327           21582       1024K   0700  fsc
+  18           21583           24570       11.6M   0700  reserve3
++ fdisk -l /dev/block/sde
+Note: sector size is 4096 (not 512)
+Found valid GPT with protective MBR; using GPT
+
+Disk /dev/block/sde: 73728 sectors,  288M
+Logical sector size: 4096
+Disk identifier (GUID): 98101b32-bbe2-4bf2-a06e-2bb33d000c20
+Partition table holds up to 8 entries
+First usable sector is 6, last usable sector is 9210
+
+Number  Start (sector)    End (sector)  Size       Code  Name
+   1               6            1541       6144K   0700  ramdump
+   2            1542            2565       4096K   0700  pg1fs
+   3            2566            3077       2048K   0700  pg2fs
+   4            3078            7173       16.0M   0700  metadata
+   5            7174            9210       8148K   0700  reserve4
++ fdisk -l /dev/block/sdf
+Note: sector size is 4096 (not 512)
+Found valid GPT with protective MBR; using GPT
+
+Disk /dev/block/sdf: 16384 sectors, 64.0M
+Logical sector size: 4096
+Disk identifier (GUID): 98101b32-bbe2-4bf2-a06e-2bb33d000c20
+Partition table holds up to 8 entries
+First usable sector is 6, last usable sector is 2042
+
+Number  Start (sector)    End (sector)  Size       Code  Name
+   1               6               9       16384   0700  board_info
+   2              10              73        256K   0700  mfg
+   3              74             457       1536K   0700  fsg
+   4             458             458        4096   0700  devinfo
+   5             459            2042       6336K   0700  reserve5
